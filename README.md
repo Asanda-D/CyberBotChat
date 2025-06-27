@@ -153,3 +153,4 @@ It is not licensed for commercial use.
 
 ### FYI
 - All references used can be found in file: **App.xaml.cs**
+- All emojies were retrived from: https://emojipedia.org/shield
