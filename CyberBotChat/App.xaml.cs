@@ -68,4 +68,5 @@ namespace CyberBotChat
  * DotnetCurry (2023) Logging in WPF Applications – Best Practices. Available at: https://www.dotnetcurry.com/wpf/1518/logging-wpf-application (Accessed: 19 June 2025).
  * GitHub Docs (2024) Understanding workflows in GitHub Actions. Available at: https://docs.github.com/en/actions/using-workflows/about-workflows (Accessed: 20 June 2025).
  * Stack Overflow (2024) How to use DialogHost with multiple windows in WPF?. Available at: https://stackoverflow.com/questions/39275498/how-to-use-dialoghost-materialdesign-with-multiple-windows (Accessed: 22 June 2025).
+ * https://emojipedia.org/shield -emojis
  */
