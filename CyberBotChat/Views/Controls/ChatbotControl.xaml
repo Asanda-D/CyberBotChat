@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="CyberBotChat.Views.Controls.ChatbotControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:CyberBotChat.Views.Controls"
+             mc:Ignorable="d" 
+             Height="Auto" Width="Auto"
+             Background="{DynamicResource MaterialDesignPaper}">
+
+    <Grid Background="{DynamicResource MaterialDesignPaper}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" Name="ChatScrollViewer" Margin="10" VerticalScrollBarVisibility="Auto">
+            <StackPanel Name="ChatStackPanel" />
+        </ScrollViewer>
+
+        <DockPanel Grid.Row="1" Margin="10">
+            <TextBox Name="UserInputBox"
+             Width="650"
+             Height="80"
+             Margin="0,0,10,0"
+             Style="{StaticResource MaterialDesignOutlinedTextBox}" />
+
+            <Button Name="SendButton"
+            Content="Send"
+            Width="100"
+            Height="40"
+            Margin="0,0,10,0"
+            Style="{StaticResource MaterialDesignOutlinedButton}"
+            Background="{DynamicResource PrimaryHueMidBrush}"
+            Foreground="White"/>
+
+            <Button Name="ResetChatButton"
+            Content="Reset"
+            Width="100"
+            Height="40"
+            Click="ResetChatButton_Click"
+            Style="{StaticResource MaterialDesignOutlinedButton}"
+            Background="{DynamicResource SecondaryHueMidBrush}"
+            Foreground="White"/>
+        </DockPanel>
+    </Grid>
+</UserControl>

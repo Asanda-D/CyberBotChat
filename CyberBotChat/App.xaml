@@ -1,0 +1,43 @@
+﻿<Application x:Class="CyberBotChat.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CyberBotChat"
+             xmlns:convert="clr-namespace:CyberBotChat.Modules.Converters"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Material Design 3 Base Theme -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+
+                <!-- Material Design 3 Defaults -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Custom Theme Colors -->
+            <SolidColorBrush x:Key="AppBackgroundBrush" Color="AliceBlue"/>
+            <SolidColorBrush x:Key="PrimaryAccentBrush" Color="#2C64B4"/>
+            <SolidColorBrush x:Key="PrimaryAccentForegroundBrush" Color="White"/>
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="CadetBlue"/>
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="White"/>
+
+            <!-- Override Material Design Paper and Button Color -->
+            <SolidColorBrush x:Key="MaterialDesignPaper" Color="AliceBlue"/>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#2C64B4"/>
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="White"/>
+            <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="CadetBlue"/>
+            <SolidColorBrush x:Key="SecondaryHueMidForegroundBrush" Color="White"/>
+
+            <!-- Global Button Style -->
+            <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                <Setter Property="Background" Value="{StaticResource PrimaryAccentBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource PrimaryAccentForegroundBrush}"/>
+                <Setter Property="Background" Value="{StaticResource SecondaryAccentBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource SecondaryAccentForegroundBrush}"/>
+                <Setter Property="Margin" Value="4"/>
+            </Style>
+
+            <convert:BooleanToTextConverter x:Key="BooleanToTextConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

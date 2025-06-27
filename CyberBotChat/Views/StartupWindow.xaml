@@ -1,0 +1,54 @@
+﻿<Window x:Class="CyberBotChat.Views.StartupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CyberBotChat.Views"
+        mc:Ignorable="d"
+        Title="Welcome to CyberLock"
+        Height="400"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource MaterialDesignPaper}">
+
+    <Grid Margin="30">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+
+            <!-- Title / Logo -->
+            <TextBlock Text="🛡️WELCOME TO CYBERLOCK GUARD!"
+               FontSize="28"
+               FontWeight="Bold"
+               HorizontalAlignment="Center"
+               Foreground="{DynamicResource PrimaryHueMidBrush}"
+               Margin="0,0,0,20" />
+
+            <!-- Name prompt -->
+            <TextBlock Text="Please enter your name:"
+               FontSize="16"
+               FontWeight="Medium"
+               Foreground="Black"
+               Margin="0,0,0,10" />
+
+            <!-- Name input box -->
+            <TextBox Name="NameInput"
+             materialDesign:HintAssist.Hint="Your Name"
+             Style="{StaticResource MaterialDesignOutlinedTextBox}"
+             Height="60"
+             FontSize="14"
+             Background="{DynamicResource MaterialDesignPaper}"
+             Margin="0,0,0,20" />
+
+            <!-- Continue button -->
+            <Button Content="Continue"
+            Width="150"
+            Height="40"
+            Click="Continue_Click"
+            Background="{DynamicResource PrimaryHueMidBrush}"
+            Foreground="White"
+            Style="{StaticResource MaterialDesignRaisedButton}"
+            HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
