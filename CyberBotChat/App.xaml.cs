@@ -51,7 +51,21 @@ namespace CyberBotChat
  */
 
 /* REFERENCES mainly used in part 3
- * 
- * 
- * 
+ * Norton (2025) Phishing protection: 11 tips to protect yourself from phishing. Available at: https://us.norton.com/blog/how-to/how-to-protect-against-phishing (Accessed: 16 June 2025).
+ * Microsoft Docs (2024) DialogHost class (MaterialDesignThemes.Wpf). Available at: https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit (Accessed: 17 June 2025).
+ * Microsoft Learn (2024) WPF .NET 8 overview. Available at: https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=netdesktop-8.0 (Accessed: 18 June 2025).
+ * UXPin (2024) UX Design Frameworks – What Are The Most Useful Ones?. Available at: https://www.uxpin.com/studio/blog/design-frameworks/ (Accessed: 19 June 2025).
+ * GeeksforGeeks (2024) C# String Manipulation Techniques. Available at: https://www.geeksforgeeks.org/string-manipulation-in-c-sharp/ (Accessed: 20 June 2025).
+ * FreeCodeCamp (2023) GitHub Actions Tutorial – Basic CI/CD Workflow. Available at: https://www.freecodecamp.org/news/github-actions-ci-cd-pipeline/ (Accessed: 21 June 2025).
+ * Codecademy (2023) How to Handle User Input in C#. Available at: https://www.codecademy.com/learn/learn-c-sharp/modules/csharp-user-input (Accessed: 22 June 2025).
+ * OWASP (2025) Top 10 Security Tips for Developers. Available at: https://owasp.org/www-project-top-ten/ (Accessed: 23 June 2025).
+ * Cybernews (2025) What is NLP and How is it Used in Chatbots?. Available at: https://cybernews.com/security/natural-language-processing-chatbots/ (Accessed: 24 June 2025).
+ * IBM (2024) Natural Language Processing (NLP) explained. Available at: https://www.ibm.com/cloud/learn/natural-language-processing (Accessed: 25 June 2025).
+ * Material Design in XAML Toolkit (2025) Material Design Components and DialogHost. Available at: https://materialdesigninxaml.net (Accessed: 26 June 2025).
+ * Baeldung (2023) C# Boolean Converters in WPF. Available at: https://www.baeldung.com/csharp/wpf-boolean-converter (Accessed: 15 June 2025).
+ * Microsoft Learn (2024) INotifyPropertyChanged interface. Available at: https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged (Accessed: 17 June 2025).
+ * JetBrains (2023) Best Practices for Clean Code in C#. Available at: https://blog.jetbrains.com/dotnet/2023/07/clean-code-best-practices/ (Accessed: 18 June 2025).
+ * DotnetCurry (2023) Logging in WPF Applications – Best Practices. Available at: https://www.dotnetcurry.com/wpf/1518/logging-wpf-application (Accessed: 19 June 2025).
+ * GitHub Docs (2024) Understanding workflows in GitHub Actions. Available at: https://docs.github.com/en/actions/using-workflows/about-workflows (Accessed: 20 June 2025).
+ * Stack Overflow (2024) How to use DialogHost with multiple windows in WPF?. Available at: https://stackoverflow.com/questions/39275498/how-to-use-dialoghost-materialdesign-with-multiple-windows (Accessed: 22 June 2025).
  */
