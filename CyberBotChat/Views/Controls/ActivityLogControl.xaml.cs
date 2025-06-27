@@ -18,9 +18,7 @@ using CyberBotChat.Modules.Logging;
 
 namespace CyberBotChat.Views.Controls
 {
-    /// <summary>
-    /// Interaction logic for ActivityLogControl.xaml
-    /// </summary>
+    // Interaction logic for ActivityLogControl.xaml
     public partial class ActivityLogControl : UserControl, INotifyPropertyChanged
     {
         private ListCollectionView limitedView;

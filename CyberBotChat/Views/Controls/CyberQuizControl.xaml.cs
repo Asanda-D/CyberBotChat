@@ -18,9 +18,8 @@ using CyberBotChat.Modules.Startup;
 
 namespace CyberBotChat.Views.Controls
 {
-    /// <summary>
-    /// Interaction logic for CyberQuizControl.xaml
-    /// </summary>
+    // Interaction logic for CyberQuizControl.xaml
+
     public partial class CyberQuizControl : UserControl
     {
 
@@ -31,7 +30,7 @@ namespace CyberBotChat.Views.Controls
         {
             InitializeComponent();
             quizCore = new CyberQuizCore();
-            ActivityLogger.Log("Quiz started: Cybersecurity Basics"); // ✅ Log quiz start
+            ActivityLogger.Log("Quiz started: Cybersecurity Basics"); // Log quiz start
             LoadCurrentQuestion();
         }
 
@@ -40,7 +39,7 @@ namespace CyberBotChat.Views.Controls
             var question = quizCore.GetCurrentQuestion();
             if (question == null)
             {
-                // ✅ Log final score when quiz completes
+                // Log final score when quiz completes
                 string finalFeedback = quizCore.GetFinalFeedback();
                 int finalScore = quizCore.GetScore();
                 ActivityLogger.Log($"Quiz completed: Score {finalScore}/15 — \"{finalFeedback}\"");
@@ -92,7 +91,7 @@ namespace CyberBotChat.Views.Controls
                 ActivityLogger.Log($"CyberBot marked: \"{feedback}\"");
 
 
-                // ✅ Log whether user got the answer right or wrong
+                // Log whether user got the answer right or wrong
                 int currentQuestionNumber = quizCore.GetCurrentIndex(); // Add this getter in CyberQuizCore
                 string result = isCorrect ? "✅" : "❌";
                 string status = isCorrect ? "correctly" : "incorrectly";

@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace CyberBotChat.Modules
 {
-    /// <summary>
-    /// Stores user memory such as discussed topics, past questions, and interest patterns.
-    /// </summary>
+    // Stores user memory such as discussed topics, past questions, and interest patterns.
+
     public class UserMemory
     {
         private readonly HashSet<string> discussedTopics = new(StringComparer.OrdinalIgnoreCase);
         private readonly List<string> pastQuestions = new();
         private readonly Dictionary<string, int> interestScores = new(StringComparer.OrdinalIgnoreCase);
 
-        /// <summary>
-        /// Adds a topic to memory and increases its interest score.
-        /// </summary>
+        // Adds a topic to memory and increases its interest score.
+
         public void RememberTopic(string topic)
         {
             discussedTopics.Add(topic);
@@ -28,33 +26,29 @@ namespace CyberBotChat.Modules
                 interestScores[topic] = 1;
         }
 
-        /// <summary>
-        /// Checks if the topic has already been discussed.
-        /// </summary>
+        // Checks if the topic has already been discussed.
+
         public bool HasDiscussed(string topic)
         {
             return discussedTopics.Contains(topic);
         }
 
-        /// <summary>
-        /// Saves a user question to memory.
-        /// </summary>
+        // Saves a user question to memory.
+
         public void AddPastQuestion(string question)
         {
             pastQuestions.Add(question);
         }
 
-        /// <summary>
-        /// Returns the full list of questions the user has asked.
-        /// </summary>
+        // Returns the full list of questions the user has asked.
+
         public IEnumerable<string> GetPastQuestions()
         {
             return pastQuestions;
         }
 
-        /// <summary>
-        /// Displays a summary of all discussed topics and asked questions using a delegate.
-        /// </summary>
+        // Displays a summary of all discussed topics and asked questions using a delegate.
+
         public void ShowMemorySummary(string userName, Action<string> output)
         {
             output($"\nCyberlock: Here's what we've covered so far, {userName}:");
@@ -96,9 +90,8 @@ namespace CyberBotChat.Modules
             }
         }
 
-        /// <summary>
-        /// Returns the most discussed topics with the highest interest scores.
-        /// </summary>
+        // Returns the most discussed topics with the highest interest scores.
+
         public List<KeyValuePair<string, int>> GetTopInterests(int count)
         {
             return interestScores

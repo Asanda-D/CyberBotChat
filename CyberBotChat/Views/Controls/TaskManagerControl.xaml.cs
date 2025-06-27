@@ -19,9 +19,7 @@ using CyberBotChat.Modules.TaskManagement;
 
 namespace CyberBotChat.Views.Controls
 {
-    /// <summary>
-    /// Interaction logic for TaskManagerControl.xaml
-    /// </summary>
+    // Interaction logic for TaskManagerControl.xaml
     public partial class TaskManagerControl : UserControl
     {
 

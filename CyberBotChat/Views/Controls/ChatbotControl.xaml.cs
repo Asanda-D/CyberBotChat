@@ -19,9 +19,9 @@ using MaterialDesignThemes.Wpf;
 
 namespace CyberBotChat.Views.Controls
 {
-    /// <summary>
-    /// Interaction logic for ChatbotControl.xaml
-    /// </summary>
+
+    // Interaction logic for ChatbotControl.xaml
+
     public partial class ChatbotControl : UserControl
     {
         private CyberBot bot;
@@ -45,7 +45,7 @@ namespace CyberBotChat.Views.Controls
             if (!string.IsNullOrEmpty(userInput))
             {
                 DisplayUserMessage(userInput);
-                HandleIntent(userInput); // ⬅️ Handle NLP first
+                HandleIntent(userInput); // Handles NLP first
                 bot.ProcessInput(userInput);
                 UserInputBox.Clear();
             }
@@ -85,7 +85,7 @@ namespace CyberBotChat.Views.Controls
             ActivityLogger.Log("Chatbot conversation cleared by user.");
         }
 
-        // ✅ NLP + DialogHost
+        // NLP + DialogHost
         private void HandleIntent(string userInput)
         {
             string intent = IntentDetector.DetectIntent(userInput);

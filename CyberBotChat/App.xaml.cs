@@ -6,9 +6,7 @@ using CyberBotChat.Views;
 
 namespace CyberBotChat
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+    // Interaction logic for App.xaml
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)

@@ -14,9 +14,8 @@ using CyberBotChat.Modules.Startup;
 
 namespace CyberBotChat
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    // Interaction logic for MainWindow.xaml
+
     public partial class MainWindow : Window
     {
         private ChatbotControl chatbotControl;
@@ -34,7 +33,7 @@ namespace CyberBotChat
             cyberQuizControl = new CyberQuizControl();
             activityLogControl = new ActivityLogControl();
 
-            // ✅ Hook up navigation
+            // Hook up navigation
             AppState.NavigationRequested = NavigateTo;
 
             // Show chatbot by default
