@@ -150,3 +150,6 @@ This video demonstrates the chatbot in action, including task reminders, quizzes
 ## 8. License
 This project is developed for academic purposes as part of the Portfolio of Evidence (POE) submission for ST10366285.
 It is not licensed for commercial use.
+
+### FYI
+- All references used can be found in file: **App.xaml.cs**
