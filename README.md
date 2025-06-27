@@ -10,7 +10,7 @@
 
 - Visual Studio 2022 or later
 
-- .NET 6.0 SDK or later
+- .NET 8.0 SDK 
 
 - NuGet packages:
   - MaterialDesignThemes
@@ -80,7 +80,6 @@
 
 **Feedback / Requirement	Implementation:**
 
-- Better commit messages	Followed meaningful Git commit structure.
 - Add release tag	GitHub release created for Part 3 final version.
 - Improve memory features	User interests are now remembered and recalled in chat.
 - Use of delegates	Delegate-based callbacks implemented for dynamic response.
